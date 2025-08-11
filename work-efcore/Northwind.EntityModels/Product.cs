@@ -1,11 +1,12 @@
-
+using System.ComponentModel.DataAnnotations; // To use [Required].
+using System.ComponentModel.DataAnnotations.Schema; // To use [Column].
 namespace Northwind.EntityModels;
 
 public class Product
 {
     public int ProductId { get; set; }
     [Required]
-    [StringLenght(40)]
+    [StringLength(40)]
     public string ProductName { get; set; } = null!;
 
     [Column("UnitPrice", TypeName = "money")]

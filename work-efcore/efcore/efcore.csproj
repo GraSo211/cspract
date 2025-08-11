@@ -17,4 +17,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Northwind.EntityModels\Northwind.EntityModels.csproj"></ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; all</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>
